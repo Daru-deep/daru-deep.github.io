@@ -1,0 +1,14 @@
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+
+
+
+
+
+node_modules/
+dist/
+build/

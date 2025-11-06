@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <meta name ="viewport" content="width=device-width.initial-scale=1">
+<head>
+	<meta charset="UTF-8">
+    <title>DENTAKU</title>
+     <link rel="stylesheet" href="dentaku_stylesheet.css">
+     <link rel="stylesheet" href="dentakuPage_styleseet.css">
+     
+</head>
+
+<body> 
+
+
+  <header>
+    <a class="back_homepage" href="../Hello_World.html">ホームページに戻る</a>
+    <div class="headerleft">
+    <h1 class="header_logo">二進数電卓</h1>
+    </div>
+  </header>
+
+
+  <div class="dentaku"><!--ここから電卓-->
+    <div class = "table">
+      <div class="window">
+        <div class="name">  Fukukawa</div>
+      <div id="num_window" >
+          <div class="num_window_head">
+            <h1>二進数計算機</h1>
+          </div>
+          <div class ="num_window">
+            <div class="num_window_num" id="num_window_num">______</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="num_buttons">
+          <button type="button" class="num btn0" onclick="numIn(0)">0</button> 
+          <button type="button" class="num btn1" onclick="numIn(1)">1</button> 
+          <button type="button" class="num btn_puls" onclick="numIn('+')">+</button> 
+          <button type="button" class="num btn_equal" onclick="numIn('=')">=</button>  
+          <button type="button" class="num btn_reset" onclick="Reset()">Reset</button>  
+      </div>
+    </div><!--ここまで電卓-->
+    
+  </div>
+
+  <script src="./dentaku_script.js"></script>
+<footer>
+  <div class="main">
+    <h1>感想</h1>
+    <p class="contents">今回苦労したところは主に、レイアウトの作成と、コードの設計です。</p>
+    <p class="contents">レイアウトに関しては、marginやpaddingや、displayを使いながらの調整に苦労しました。</p>
+    <p class="contents">コードに関しては、全体的な構造はスムーズに思いついたものの、配列の理解にミスがありそれを克服するまでの苦労しました。</p>
+    <p></p>
+    <p class="contents">
+フォント：装甲明朝
+フリーダウンロード：https://flopdesign.booth.pm/items/1028555
+    </p>
+  </div>
+   </footer>
+</body>
