@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ふくかわのHTML</title>
+    <title>Kimimasa Fukukawa — Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
@@ -19,13 +19,13 @@
 
         <div id = "header">
         <h1 class="logo">
-            ふくかわのホームページ
+            ふくかわの<span>WORKS</span>
         </h1>
 
         <ul class="list">
-            <a class="btn" href="#">ふくかわについて</a>
-            <a class="btn" href="#">スキルについて</a>
-            <a class="btn" href="AIPortFolio.html">制作におけるAIの活用記録</a>
+            <a class="btn" href="#about">About</a>
+            <a class="btn" href="#skill">Skills</a>
+            <a class="btn" href="#work">Works</a>
         </ul>
 
         </div>
@@ -35,8 +35,8 @@
 
         <div class="top-wrapper">
             <div class="top-contents">
-                <h1>なんかいい感じの<br>
-                標語を入れる</h1>
+                <h1>毎日なんか<br><span class="accent">つくってる。</span></h1>
+                <p class="hero-sub">GAME &nbsp;/&nbsp; WEB &nbsp;/&nbsp; MUSIC &nbsp;/&nbsp; ILLUSTRATION</p>
             </div>
 
             <div id="top-image">
@@ -58,11 +58,10 @@
                 <img src="img/icon_about.png">
                 <div class="texts">
                     <h3 class="name">Kimimasa Fukukawa</h3>
-                    <div class="text">25歳の無職。<br>
-                        就労移行支援事業所リンクス大宮に通いながらゲームの制作や資格勉強などをしています。<br>
-                        好きなゲームは"NeedyGirlOverDose"<br>
-                        好きな映画は"怖すぎ!! シリーズ"の河童<br>
-                        好きな漫画は"なるたる"</div>
+                    <div class="text">25歳、絶賛無職中。でも毎日手を動かしてる。<br>
+                        リンクス大宮に通いながらゲーム・Web・音楽・イラストと<br>節操なくいろいろ作っています。<br><br>
+                        好き：「NeedyGirlOverDose」「なるたる」「怖すぎ!!シリーズの河童」</div>
+                        
                 </div>
             </div>
         </section>
@@ -76,28 +75,34 @@
 
                 <li class="contents-item">
                     <img src="ss_game1_1.png" height=200px>
-                    <p class="item-In 1in">TGKE</p>
+                    <p class="item-In in-1">TGKE</p>
                 </li>
 
                 <li class="contents-item">
                    
                     <img  src="ss_game2_1.png" height=200px>
 
-                    <p class="item-In 2in" >数字当てゲーム</p>
+                    <p class="item-In in-2">数字当てゲーム</p>
                 </li>
 
                 <li class="contents-item">
                     <img src="ss_dentaku.png" height=200px>
-                    <p class="item-In 3in">２進数計算機</p>
+                    <p class="item-In in-3">２進数計算機</p>
                 </li>
 
                 <li class="contents-item">
                     <img src="ss_game3_1.png" height=200px>
-                    <p class="item-In 4in">ぷよぷよ風パズルゲーム</p>
+                    <p class="item-In in-4">ぷよぷよ風パズルゲーム</p>
+                </li>
 
                 <li class="contents-item">
-                    <img src="ss_game3_1.png" height=200px>
-                    <p class="item-In 5in">にゃんこ大戦争風ストラテジーゲーム</p>
+                    <img src="ss_game4_1.png" height=200px>
+                    <p class="item-In in-5">にゃんこ大戦争風ストラテジーゲーム</p>
+                </li>
+                <li class = "contents-item">
+                    <img src = "ss_game4_1.png" height=200px>
+                    <p class="item-In in-6">弾幕シューティングゲーム</p>
+                </li>
 
 
             </ul>
@@ -289,15 +294,65 @@
 
             <div class="coments item">
                 <h3>・制作を振り返って</h3>
-                Unityについて実力を高めたいと考えていた際、パズルゲームを一つ完成させると理解度が大きく上がると聞いて取り組んだ作品になります。<br>
-                技術向上を意識して制作した作品としては初めてのものになり難易度も当時の自分としては高かったように感じます<br>
-                それでも、検索をして調べたり、どうしてもわからないところはChatGPTにアイディアを貰いながら完成させました。<br>
-                特に、連鎖やゲーム内の情報と見た目の座標の組み合わせなどに苦労しましたが、
-                キューの活用や変換用のメゾットを作成するなどして解決しました。<br>
+                Unityについて実力を高めたいと考えていた際、パズルゲームを一つ完成させると理解度が大きく上がると聞いて取り組んだ作品になります。
+                技術向上を意識して制作した作品としては初めてのものになり難易度も当時の自分としては高かったように感じます
+                それでも、検索をして調べたり、AIに方法を提案してもらいながら行いました。
+                具体的には、初めボードの座標の管理を多次元配列で行おうとしていたのですが、結果として煩雑で分かりにくくなってしまいました。
+                特に、連鎖やゲーム内の情報と見た目の座標の組み合わせなどに問題が発生したため、相談したところVector2Intの変数を使う事を提案されました。
+                また、連鎖処理についても、キューの活用や変換用のメゾットを作成するなどして解決しました。<br>
                 ゲームとしては地味ですが、様々な方法を知ることができ、目標であった実力の向上は果たせたと考えています。
             </div>
 
-            <div class="gitLink item"><h3>GitLink</h3>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+            
+        </div>
+        
+    </div>
+    </div>
+</section>
+
+
+<section class="mordal_wrapper" id="game5_wrapper">
+     <div class="mordal">
+        <!-- "close-modal"というclassをつけてください -->
+
+        <div class="mordal_box">
+            <div class="name item">
+                <h1 class="cintents_title">にゃんこ大戦争風ストラテジーゲーム</h1>
+                <h2 class="midasi">戦略を組んで陣地を防衛！！</h2>
+            </div>
+
+            <p class="lines item">
+              某ゲームモチーフのストラテジーゲーム！！
+            </p>
+
+            <div class="picturs item">
+                <img src="ss_game4_1.png">
+            </div>
+        </div>
+
+        <div class="mordal_box">
+            <div class="close-modal">
+                <i class="fa fa-2x fa-times ">×</i>
+            </div>
+
+            <div class="using item">
+                <h3>・使った技術</h3>
+                Unity,CSV読み込み,ScriptableObject
+            </div>
+
+
+
+
+            <div class="coments item">
+                <h3>・制作を振り返って</h3>
+                特に工夫した点は単純にゲームを作る点ではなく、チーム開発を意識して拡張やメンテナンスを意識した点にあります。<br>
+                キャラクターの追加やWaveの追加などのメンテナンスをインスペクターでの操作や外部ファイルのCSVを取り込むことで管理できるようにしました。<br>
+                キャラクターについてはScriptableObjectを使用し、ゲームデザインがしやすいようにしました。<br>
+                反省点としては、ゲームというより単純作業になってしまった点です。<br>
+                原因としてこういうゲームって本来、育成とかキャラクターの面白さとかで成立していて、ゲーム本編だけでは成り立たないジャンルだったという事があると思います。
+            </div>
+
+            
         </div>
         
     </div>
@@ -309,12 +364,12 @@
                     <div class="languages">
                         <h4 class="littleSection-title">使用可能言語</h4>
                         <ul class="language">
-                            <li>Java<br>(３か月　2024年10月～2025年1月)</li>
-                            <li>Unity<br>(１０か月　2025年01月～11月現在)</li>
-                            <li>HTML<br>(１か月　2025年5月)</li>
-                            <li>JavaScript<br>(１か月　2025年5月)</li>
+                            <li>Java<br>(3か月　2024年10月～2025年1月)</li>
+                            <li>Unity<br>(16か月　2025年01月～2026年4月現在)</li>
+                            <li>HTML<br>(11か月　2025年5月～2026年4月現在)</li>
+                            <li>JavaScript<br>(11か月　2025年5月～2026年4月現在)</li>
                             <li>JQuery<br>(１か月　2025年5月)</li>
-                            <li>GitHub<br>(1か月　2025年11月現在)</li>
+                            <li>GitHub<br>(1か月　2025年11月～2026年4月現在)</li>
                         </ul>
                     </div>
 
@@ -322,7 +377,8 @@
                         <h4 class="littlesection-title">所有資格</h4>
                         <ul>
                             <li class="licence">ITパスポート</li>
-                            <li class="licence">基本情報技術者試験（取得予定）</li>
+                            <li class="licence">基本情報技術者試験（勉強中）</li>
+                            <li class="licence">普通自動車第一種免許（勉強中）</li>
                         </ul>
                     </div>
             </div>
@@ -333,10 +389,35 @@
                 </a>
             </section>
 
+
+            <section id = "movie" class="wrapper">
+                <h3 class="title">movie</h3>
+                <ul class="contents">
+                    <li>
+                    <iframe src="https://www.youtube.com/embed/E4AIowZitqw?si=WNMlzTcoGIo_qpi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                    <iframe src="https://www.youtube.com/embed/E4AIowZitqw?si=_8ZLyJTwYQY7AqWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                    <iframe src="https://www.youtube.com/embed/8Ju5Z83Azr8?si=meuriD5iZPhU-Aui" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                    <iframe src="https://www.youtube.com/embed/Rwfk5opWr_Y?si=TxqicZDLP8EA6jIF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </section>
+
             <section id="news" class="wrapper">
                 <h3 class="title">news</h3>
 
                 <dl>
+                    <dt>2026.03.24</dt>
+                    <dd>板垣巴留展 楽しかった</dd>
+                    <dt>2026.02.12</dt>
+                    <dd>沖縄旅行 楽しかった</dd>
+                    <dt>2026.01.17</dt>
+                    <dd>ブルアカフェス 楽しかった</dd>
                     <dt>2025.04.29</dt>
                     <dd>熱海旅行 楽しかった</dd>
                     <dt>2025.03.26</dt>
@@ -352,7 +433,7 @@
         </section>
 
         <footer id="footer">
-            2025 Portfolio
+            &copy; 2026 Kimimasa Fukukawa — made with too much free time
         </footer>
         <script>
 

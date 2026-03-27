@@ -1,22 +1,28 @@
-$('.1in').click(function(){
+$('.in-1').click(function(){
     $('#game_wrapper').fadeIn();
 })
 
-$('.2in').click(function() {
+$('.in-2').click(function() {
 
     $('#game2_wrapper').fadeIn();
 
 })
 
-$('.3in').click(function() {
+$('.in-3').click(function() {
 
     $('#game3_wrapper').fadeIn();
 
 })
 
-$('.4in').click(function() {
+$('.in-4').click(function() {
 
     $('#game4_wrapper').fadeIn();
+
+})
+
+$('.in-5').click(function() {
+
+    $('#game5_wrapper').fadeIn();
 
 })
 

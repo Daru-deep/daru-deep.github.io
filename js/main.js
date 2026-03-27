@@ -13,10 +13,10 @@ window.addEventListener("scroll",function(){
 const elm = document.querySelector("#header");
 const scroll = window.pageYOffset;
 if(scroll > 500){
-    elm.fadeOut();
+    $(elm).fadeOut();
     console.log(scroll);
   } else {
-    elm.fadeIn();
+    $(elm).fadeIn();
     console.log(scroll);
 }
 
