@@ -183,6 +183,15 @@
 
 ---
 
+## 14. illustration ActivityLog・index.html news 追加
+> 2026-04-03
+
+- `illustration.html` に ActivityLog セクションを追加（**自分作業**）
+- `index.html` の news セクションを更新（**自分作業**）
+- `illustration.css` の `#news` → `#activityLog` にリネーム（AI作業）
+
+---
+
 ## 11. VHS.css のローカル化
 > 2026-03-31 (AI作業)
 
