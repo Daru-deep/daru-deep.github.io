@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="illustration/illustration.css">
+    
     <script>const HEADER_URL = 'html/header.html';</script>
     <script src="js/header.js"></script>
 </head>
@@ -9,32 +9,24 @@
     <div id="header"></div>
 
     <div id="main">
-        <div id="hero" class="wrapper">
-            <h1 class="hero-txt">
-                <span style="color: #ffc0cd; font-weight: bold;">"kawaii"</span>と<br>
-                <span style="color: #bffff4; font-weight: bold;">"カッコいい"</span>の<br>
-                <span style="font-weight:bold">両立</span>を目指して
-            <h1>
-        </div>
-        <div id="massage" class="wrapper">
-            <h3 class="title">massage</h3>
-            <p> 
-                
-            </p>
-        </div>
+        <div id="message" class="wrapper">
+            <h3 class="title">message</h3>
+            <div class="message"> 
+                大学では音楽を専攻しました。<br>
+                音楽制作するのが専門の学科ではなく、<br>
+                どちらかというと表現方法の追求が専門の学科でした。<br>
+                そのなかで、音楽理論等も習ったため、<br>
+                たまに制作ソフトを開いて制作しています。
+            </div>
         <section id="work" class="wrapper">
-            <h3 class="title">Pictures</h3>
+            <h3 class="title">MUSIC</h3>
+                
             
-            
-            <div class="contents">
-                <ul>
-                    <li class="container">
-                        <img src ="img/illustlation_img/niziso2.jpg" class="picture">
-                        <img src ="img/illustlation_img/niziso.jpg" class="picture">
-                        <img src ="img/illustlation_img/niziso3.jpg" class="picture">
-                    </li>
-                </ul>
-                <p>時折、イベントにサークル参加をしてます。楽しい</p>
+            <div class="container">
+                <p>タイトル: 日常1</p>
+                <audio controls>
+                    <source src="Music.mp3" type="audio/mpeg">
+                </audio>
             </div>
 
         </section>
@@ -46,3 +38,23 @@
     <li><link>https://codepen.io/patrickhlauke/pen/YaoBop</li>
 </footer>
 </html>
+<style>
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.message{
+    width: 30rem;
+    text-align:center;
+    margin:0 auto;
+}
+
+
+#work .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+</style>
