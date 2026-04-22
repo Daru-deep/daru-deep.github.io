@@ -198,3 +198,22 @@
 - **問題**: `http://` のCDN参照がブラウザのMixed Contentポリシーでブロックされていた
 - **修正**: ファイルを `css/vhs.min.css` としてローカル保存し参照を変更
 - **その後**: 使用しないことになったため `css/vhs.min.css` を削除、`index.html` の参照も削除
+
+---
+
+## 15. Appページ（apps.html）の新規作成
+> 2026-04-22 (AI作業)
+
+### 依頼内容
+- ai_TaskとDentakuの紹介＋リンクをまとめたAppページを作成
+- 追加予定の2つのアプリ用のページも作成
+
+### 作業内容
+- `apps.html` を新規作成（アプリ一覧インデックスページ）
+  - AI Task Manager（→ ai_task.html）
+  - DENTAKU（→ DENTAKU/Dentaku.html）
+  - App 3 Coming Soon（→ app2.html）
+  - App 4 Coming Soon（→ app3.html）
+- `css/apps.css` を新規作成（カードレイアウト専用スタイル）
+- `app2.html` / `app3.html` を新規作成（未来のアプリ用プレースホルダーページ）
+- `html/header.html` の「App」リンクを `ai_task.html` → `apps.html` に更新

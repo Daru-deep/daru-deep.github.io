@@ -1,0 +1,100 @@
+.apps-hero {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+.apps-hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #eee;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+}
+
+.apps-hero p {
+    color: #888;
+    font-size: 1rem;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto 130px;
+    padding: 0 20px;
+}
+
+.app-card {
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.app-card:hover {
+    border-color: #555;
+    transform: translateY(-3px);
+}
+
+.app-card.coming-soon {
+    opacity: 0.5;
+}
+
+.app-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    color: #888;
+    text-transform: uppercase;
+    border: 1px solid #333;
+    border-radius: 3px;
+    padding: 2px 8px;
+    width: fit-content;
+}
+
+.app-card h2 {
+    font-size: 1.4rem;
+    color: #eee;
+    margin: 0;
+}
+
+.app-card p {
+    font-size: 0.9rem;
+    color: #aaa;
+    line-height: 1.8;
+    flex: 1;
+}
+
+.app-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 8px 20px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #ccc;
+    font-size: 0.85rem;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+    width: fit-content;
+}
+
+.app-link:hover {
+    background: #222;
+    color: #fff;
+}
+
+.app-link.disabled {
+    pointer-events: none;
+    border-color: #2a2a2a;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .apps-grid {
+        grid-template-columns: 1fr;
+    }
+}
