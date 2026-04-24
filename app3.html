@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Susan — App 4</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="app_task/ai_task.css">
+    <link rel="stylesheet" href="app_task/app1.css">
+    <link rel="stylesheet" href="css/img-modal.css">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <script>const HEADER_URL = 'html/header.html';</script>
     <script src="js/header.js"></script>
+    <script src="js/img-modal.js" defer></script>
 </head>
 <body>
     <div id="header"></div>
@@ -16,9 +18,27 @@
         <div id="message" class="wrapper">
             <h3 class="title">App 4</h3>
             <p>
-                現在制作中です。
+                Claudを活用したアプリケーション制作の学習プロジェクトです。<br><br>
+                現在、Claudにコードを生成させ、そのコードを活用する形でアプリケーションを制作しています。<br>
+                しかし、AIに依存して制作したアプリケーションは、動作はするものの、UX（ユーザー体験）や機能面の品質を確保することが困難です。<br>
+                実際に現場で培われたスキルで作られたアプリケーションと比べると、AIに頼りきりの制作物は、専門性に欠けると言わざるを得ません。<br>
+                これは、実際に現場で働く友人が独自に制作したアプリケーションと比較して感じたことです。<br><br>
+                そのため、まずはアプリケーションを一から制作する実践的な能力を身につけることにしました。<br><br>
+                しかし、単にプログラミング言語を学習するだけでは、目的に合致しないと考えました。<br>
+                アプリケーション開発能力の向上という目標を見失わないよう、学習方法を工夫しました。<br><br>
+                具体的には、研修でよく採用される、既存のアプリケーションに機能を追加していくという手法で学習を進めます。<br>
+                さらに、Claudを模擬的な上司に見立てたOJT（オン・ザ・ジョブ・トレーニング）形式で進めることで、実際の業務に役立つ能力の育成を目指します。
             </p>
         </div>
+        <section id="work" class="wrapper">
+            <h3 class="title">Screenshot</h3>
+            <div class="container">
+                <img class="picture" src="img/App3_img/KotlinTra_img (1).jpg" alt="App3 スクリーンショット1">
+                <img class="picture" src="img/App3_img/KotlinTra_img (2).jpg" alt="App3 スクリーンショット2">
+                <img class="picture" src="img/App3_img/KotlinTra_img (3).jpg" alt="App3 スクリーンショット3">
+                <img class="picture" src="img/App3_img/KotlinTra_img (4).jpg" alt="App3 スクリーンショット4">
+            </div>
+        </section>
     </div>
 
     <footer>
@@ -26,3 +46,14 @@
     </footer>
 </body>
 </html>
+
+<style>
+    #work .container{
+            grid-template-columns: repeat(4, 1fr);
+    }
+   #work img {
+        max-height: 500px;
+        max-width: 250px;
+   }
+
+</style>
