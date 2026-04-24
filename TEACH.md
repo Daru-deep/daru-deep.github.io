@@ -145,6 +145,30 @@ HTMLの要素には2種類ある。
 
 ---
 
+## games.js のコードを読む
+> 2026-04-23
+
+**Q**: games.jsのコードを説明して
+
+```js
+Promise.all([
+    'html/modals/modal-tgke.html',
+    ...
+].map(url => fetch(url).then(r => r.text())))
+.then(htmls => {
+    document.getElementById('modals-container').innerHTML = htmls.join('');
+});
+```
+
+**A**: 6つのモーダルHTMLファイルを読み込んでページに差し込むコード。
+
+1. **配列** — 読み込みたいHTMLファイルのパスをまとめる
+2. **`.map(url => fetch(url).then(r => r.text()))`** — 配列の1個1個に`fetch`（ファイル取得）をかける。`fetch`は非同期なので取得完了のタイミングがバラバラ
+3. **`Promise.all(...)`** — 「全部終わるまで待って、全部揃ったら次へ進む」命令。1個でも失敗したら止まる
+4. **`.then(htmls => { ... })`** — 全ファイルの中身が`htmls`配列に入ってくる。`join('')`で1つの文字列につなげて`modals-container`にHTMLとして書き込む
+
+---
+
 ## ブラウザキャッシュのクリア
 > 2026-03-31
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Susan — Portfolio</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="games/games.css">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
@@ -32,69 +33,42 @@
         </div>
 
         <section id="work" class="wrapper">
+
+            <h4 class="title">MESSAGE</h4>
+            <p>Unityを使用してゲームを作成しています。<br>
+            Unityでのプログラミングは基本的に自分で行っています。<br>
+            一部、質問形式でAIを利用していますが、理解してから自分のコードとして取り入れるようにしています。
+        </p>
             <h3 class="title">Work</h3>
-            <h4 class="title">GAMES</h4>
             <ul class="contents">
-
-
-
-                <li class="contents-item">
-                    <img src="img/ss_game1_1.png" height=200px>
-                    <p class="item-In in-1">TGKE</p>
+                <li class="game-card in-1">
+                    <img src="img/ss_game1_1.png">
+                    <p>TGKE</p>
                 </li>
-
-                <li class="contents-item">
-                   
-                    <img  src="img/ss_game2_1.png" height=200px>
-
-                    <p class="item-In in-2">数字当てゲーム</p>
+                <li class="game-card in-2">
+                    <img src="img/ss_game2_1.png">
+                    <p>数字当てゲーム</p>
                 </li>
-
-                <li class="contents-item">
-                    <img src="img/ss_dentaku.png" height=200px>
-                    <p class="item-In in-3">２進数計算機</p>
+                <li class="game-card in-3">
+                    <img src="img/ss_dentaku.png">
+                    <p>２進数計算機</p>
                 </li>
-
-                <li class="contents-item">
-                    <img src="img/ss_game3_1.png" height=200px>
-                    <p class="item-In in-4">ぷよぷよ風パズルゲーム</p>
+                <li class="game-card in-4">
+                    <img src="img/ss_game3_1.png">
+                    <p>ぷよぷよ風パズルゲーム</p>
                 </li>
-
-                <li class="contents-item">
-                    <img src="img/ss_game4_1.png" height=200px>
-                    <p class="item-In in-5">にゃんこ大戦争風ストラテジーゲーム</p>
+                <li class="game-card in-5">
+                    <img src="img/ss_game4_1.png">
+                    <p>にゃんこ大戦争風ストラテジーゲーム</p>
                 </li>
-                <li class = "contents-item">
-                    <img src="img/ss_game5_1.png" height=200px>
-                    <p class="item-In in-6">弾幕シューティングゲーム</p>
+                <li class="game-card in-6">
+                    <img src="img/ss_game5_1.png">
+                    <p>弾幕シューティングゲーム</p>
                 </li>
-
-
             </ul>
-
-            <div class="more_portfolio">
-
-                タイトルをクリックすると詳細が表示されるよ
-
-
-
-            </div>
 
 
             <div id="modals-container"></div>
-            <script>
-                Promise.all([
-                    'html/modals/modal-tgke.html',
-                    'html/modals/modal-number-guess.html',
-                    'html/modals/modal-binary-calc.html',
-                    'html/modals/modal-puyo-puzzle.html',
-                    'html/modals/modal-strategy.html',
-                    'html/modals/modal-danmaku.html'
-                ].map(url => fetch(url).then(r => r.text())))
-                .then(htmls => {
-                    document.getElementById('modals-container').innerHTML = htmls.join('');
-                });
-            </script>
             <section id="links" class="wrapper">
                 <h3 class="title">Links</h3>
                 <a href="https://github.com/Daru-deep" target="_blank" >
@@ -103,6 +77,29 @@
             </section>
 
 
+            <section id="kikakusho" class="wrapper">
+                <h3 class="title">企画書</h3>
+                <ul class="kikakusho-list">
+                    <li>
+                        <a href="pdf/TGKE企画書.pdf" target="_blank" class="kikakusho-card">
+                            <span class="kikakusho-name">TGKE</span>
+                            <span class="kikakusho-label">企画書を見る →</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pdf/放置系RPG.pdf" target="_blank" class="kikakusho-card">
+                            <span class="kikakusho-name">放置系RPG</span>
+                            <span class="kikakusho-label">企画書を見る →</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pdf/数字推理ゲーム.pdf" target="_blank" class="kikakusho-card">
+                            <span class="kikakusho-name">数字推理ゲーム</span>
+                            <span class="kikakusho-label">企画書を見る →</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
             <section id = "movie" class="wrapper">
                 <h3 class="title">movie</h3>
                 <ul class="contents">
@@ -129,10 +126,8 @@
         <footer id="footer">
             &copy; 2026 Susan — made with too much free time
         </footer>
-        <script>
-
-        </script>
-        <script type="text/javascript" src="js/modal.js"></script>
+        <script src="games/games.js" defer></script>
+        <script src="js/modal.js"></script>
 </body>
 
 </html>
