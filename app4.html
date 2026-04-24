@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Susan — App 4</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="app_task/common.css">
+    <link rel="stylesheet" href="css/img-modal.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <script>const HEADER_URL = 'html/header.html';</script>
+    <script src="js/header.js"></script>
+    <script src="js/img-modal.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div id="main">
+        <div id="message" class="wrapper">
+            <h3 class="title">タスクマネージャー改</h3>
+            <p>
+                以前制作したAI搭載タスクマネージャーの反省をもとに、新しくタスクマネージャーアプリを開発しました。<br>
+                前作はAIを使用したことでサーバーの起動が必要になり、PC版メインの設計になってしまったため、利便性に欠けていました。<br>
+                また、アプリを開くモチベーションを高める仕組みがなく、しばらく使わなくなってしまうという課題もありました。<br><br>
+                そこで今作では、Android版を軸に再設計しました。<br>
+                モチベーション維持のため、Duolingoやポケモンスリープをヒントにキャラクターの育成要素を追加しています。<br>
+                また、機能をあえて絞ることで、操作の煩雑さも解消しました。
+            </p>
+        </div>
+        <section id="work" class="wrapper">
+            <h3 class="title">Screenshot</h3>
+            <div class="container">
+                <img class="picture" src="img/App4_img/app4_img (1).jpg" alt="App4 スクリーンショット1">
+                <img class="picture" src="img/App4_img/app4_img (2).jpg" alt="App4 スクリーンショット2">
+                <img class="picture" src="img/App4_img/app4_img (3).jpg" alt="App4 スクリーンショット3">
+                <img class="picture" src="img/App4_img/app4_img (4).jpg" alt="App4 スクリーンショット4">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Susan — made with too much free time
+    </footer>
+</body>
+</html>
+
+<style>
+    #work .container{
+            grid-template-columns: repeat(4, 1fr);
+    }
+   #work img {
+        max-height: 500px;
+        max-width: 250px;
+   }
+
+</style>
