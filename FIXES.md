@@ -217,3 +217,17 @@
 - `css/apps.css` を新規作成（カードレイアウト専用スタイル）
 - `app2.html` / `app3.html` を新規作成（未来のアプリ用プレースホルダーページ）
 - `html/header.html` の「App」リンクを `ai_task.html` → `apps.html` に更新
+
+---
+
+## 16. フッター文言の修正（© 2026 Susan）
+> 2026-07-24 (AI作業)
+
+### 依頼内容
+- リポジトリ全体のHTMLからフッターの "made with too much free time" を探し、すべて「© 2026 Susan」に置き換える
+
+### 作業内容
+- 全HTMLファイル（DENTAKUフォルダは対象外）を確認し、該当箇所を5ファイル・5箇所検出
+  - `app2.html`（39行目）、`app3.html`（45行目）、`app4.html`（41行目）、`apps.html`（83行目）、`games.html`（127行目）
+- 各ファイルの `<footer>` 内 `&copy; 2026 Susan — made with too much free time` を `&copy; 2026 Susan` に修正
+- フッター以外のレイアウト・CSSは変更なし
