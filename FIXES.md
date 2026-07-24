@@ -266,3 +266,15 @@
 - 参照元を `app2.html`・`app3.html`・`app4.html`・`index.html`（計18箇所、CSS/JSからの参照なし）で確認し書き換え
 - リネーム後のファイル名で全リポジトリを再grepし、参照漏れがないことを確認
 - リポジトリ全体を走査し、壊れた画像参照が残っていないことを確認（`html/modals/` 配下の既存フラグメント6件は今回のリネームと無関係で、ルート基準パスのため問題なし）
+
+---
+
+## 19. 「AI Task Manager」の英語タイトル変更
+> 2026-07-24 (AI作業)
+
+### 依頼内容
+- 「AI Task Manager」の英語タイトルについて、別名を考案し適用する
+
+### 作業内容
+- Windowsのタスクマネージャーと紛らわしい名称を避けるため、AIが優先順位を助言するアプリの機能を踏まえた候補案を複数提示し、「AI Task Coach」を採用
+- `apps.html`（h2見出し）・`app1.html`（h3見出し）の2箇所を「AI Task Manager」/「AI TASK MANAGER」→「AI Task Coach」/「AI TASK COACH」に変更
