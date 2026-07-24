@@ -30,3 +30,14 @@ body {
     height: auto;
     object-fit: contain;
 }
+
+/* ========== MOBILE ========== */
+@media (max-width: 600px) {
+    .wrapper {
+        width: 92%;
+    }
+
+    #work .container {
+        grid-template-columns: 1fr;
+    }
+}

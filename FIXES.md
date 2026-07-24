@@ -278,3 +278,25 @@
 ### 作業内容
 - Windowsのタスクマネージャーと紛らわしい名称を避けるため、AIが優先順位を助言するアプリの機能を踏まえた候補案を複数提示し、「AI Task Coach」を採用
 - `apps.html`（h2見出し）・`app1.html`（h3見出し）の2箇所を「AI Task Manager」/「AI TASK MANAGER」→「AI Task Coach」/「AI TASK COACH」に変更
+
+---
+
+## 20. スマホ対応（viewportタグ・レスポンシブ対応）
+> 2026-07-24 (AI作業)
+
+### 依頼内容
+- サイト全体にスマホ用のコードを追加する（基本対応レベル：viewportタグ追加＋固定グリッドのスマホ幅対応）
+
+### 作業内容
+- DENTAKUを除く全11ページ（index/apps/app1〜4/illustration/about_ai/music/games/privacy_policy）に `<meta name="viewport" content="width=device-width, initial-scale=1.0">` を追加
+- `@media (max-width: 600px)` のブレークポイントを各CSSに追加し、固定の複数列グリッドを1列（または2列）に変更
+  - `css/common.css`: `.wrapper`のpadding、`#work ul`・`#skill ul`・`.mordal_wrapper .mordal`・`#movie ul`のグリッド列数、`.hero-txt`のフォントサイズ、`#main`の上パディングなど
+  - `indexpage/style.css`: ヒーロー画像・テキストの位置調整、`#about .contents`の縦積み化
+  - `app_task/common.css`・`app_task/app1.css`: スクリーンショットギャラリーの2列→1列化
+  - `games/games.css`: ゲームカードの3列→1列化
+  - `illustration/illustration.css`: 作品画像の折り返し対応
+  - `music.html`（インラインstyle）: 固定幅`.message`をスマホ幅で可変に変更
+- 実装後、Playwrightでスマホ幅（375px）の実機確認を実施し、以下の既存バグ2件を追加で修正
+  - `#nav-drawer`に`box-sizing: border-box`がなく、閉じた状態でも実測幅が260pxではなく320pxになり、画面左端40px分がはみ出してコンテンツを隠していた問題を修正
+  - 固定表示のハンバーガーボタンがページ先頭のタイトル文字と重なる問題を、`#main`に上パディングを追加して解消
+- 全ページをスクリーンショットで目視確認し、横スクロール（オーバーフロー）が発生しないことを確認

@@ -66,5 +66,21 @@ body {
   }
 }
 
+/* ========== MOBILE ========== */
+@media (max-width: 600px) {
+    .hero-txt {
+        font-size: 2.2em;
+    }
+
+    #work .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #work .container img {
+        width: calc(100% - 2rem);
+    }
+}
+
 
 

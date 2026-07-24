@@ -86,6 +86,7 @@ img {
     background: #1a1a1a;
     z-index: 110;
     padding: 80px 30px 30px;
+    box-sizing: border-box;
     transition: left 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -300,4 +301,54 @@ footer {
   to {
     text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
   }
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .section-title {
+        padding-left: 20px;
+    }
+
+    #work ul {
+        grid-template-columns: 1fr;
+    }
+
+    #skill ul {
+        grid-template-columns: 1fr;
+        line-height: 1.6;
+    }
+
+    #skill ul li {
+        margin-bottom: 12px;
+    }
+
+    .mordal_wrapper .mordal {
+        width: 95%;
+        height: 90%;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    #movie ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
+
+    .hero-txt {
+        font-size: 2.2em;
+    }
+
+    #links img {
+        width: 70%;
+        margin: auto 15%;
+    }
+
+    #main {
+        padding-top: 60px;
+    }
 }
