@@ -117,3 +117,30 @@
     margin: 0;
     color: #ccc;
 }
+
+/* ========== MOBILE ========== */
+@media (max-width: 600px) {
+    .hero-img {
+        margin-left: 0;
+    }
+
+    .hero-texts {
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 2em;
+    }
+
+    #about .contents {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about img {
+        margin: 0 auto 15px;
+    }
+}

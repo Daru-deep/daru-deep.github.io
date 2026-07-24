@@ -83,3 +83,10 @@
 .kikakusho-card:hover .kikakusho-label {
     color: #aaa;
 }
+
+/* ========== MOBILE ========== */
+@media (max-width: 600px) {
+    #work .contents {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script>const HEADER_URL = 'html/header.html';</script>
     <script src="js/header.js"></script>
@@ -66,5 +68,15 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 92%;
+    }
+
+    .message {
+        width: 100%;
+    }
 }
 </style>
